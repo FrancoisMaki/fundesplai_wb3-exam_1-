@@ -17,62 +17,143 @@ body{
     margin-bottom: 20px;
 }
 
-.nav-bar{
+/* Estilo de la barra de navegación */
+.nav-bar {
     text-align: center;
     transition: 0.3s ease-in-out;
     background-color: rgba(0, 0, 0, 0.7);
-    position: sticky; 
-    top: 0;           
+    position: sticky;
+    top: 0;
     color: white;
     padding: 15px;
 }
 
-.nav-bar a{
+/* Estilo para el menú */
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.nav-bar a {
     color: white;
     text-decoration: none;
     padding: 10px;
     display: inline-block;
 }
 
-.nav-bar a:hover{
-    color: rgb(101, 132, 101)
+.nav-bar a:hover {
+    color: rgb(101, 132, 101);
 }
 
-.nav-bar a:active{
-    color: rgb(191, 191, 205)
+.nav-bar a:active {
+    color: rgb(191, 191, 205);
 }
 
-.sabrina-carpenter-section{
+/* Estilo para los elementos del menú desplegable */
+.nav-bar .dropdown {
+    position: relative;
+}
+
+.nav-bar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilo del submenú, oculto por defecto */
+.nav-bar .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-bar .dropdown-menu li {
+    padding: 10px;
+}
+
+.nav-bar .dropdown-menu li a {
     color: white;
 }
 
-.sabrina-carpenter-section h1{
+.nav-bar .dropdown-menu li a:hover {
+    color: rgb(101, 132, 101);
+}
+
+.nav-bar .dropdown-menu li a:active {
+    color: rgb(191, 191, 205);
+}
+
+.sabrina-carpenter-section,
+.lady-gaga-section,
+.rauw-alejandro-section,
+.chappell-roan-section
+{
+    color: white;
+}
+
+.sabrina-carpenter-section h1,
+.lady-gaga-section h1,
+.rauw-alejandro-section h1,
+.chappell-roan-section h1
+{
     text-align: center;
     font-size: 3rem;
 }
 
-.sabrina-carpenter-info p{
+.sabrina-carpenter-info p,
+.lady-gaga-info p,
+.rauw-alejandro-info p,
+.chappell-roan-info p
+{
     margin: 4rem;
     line-height: 2;
 }
 
-#sabrina-carpenter-p1{
+#sabrina-carpenter-p1,
+#lady-gaga-p1,
+#rauw-alejandro-p1,
+#chappell-roan-p1
+{
     width: 100%;
     height: auto;
 }
 
-.sabrina-carpenter-songs{
+.sabrina-carpenter-songs,
+.lady-gaga-songs,
+.rauw-alejandro-songs,
+.chappell-roan-songs
+{
     color: white;
 }
 
 .sabrina-carpenter-info h2, 
 .sabrina-carpenter-songs h2,
-.sabrina-carpenter-video h2{
+.sabrina-carpenter-music h2,
+.lady-gaga-info h2, 
+.lady-gaga-songs h2,
+.lady-gaga-music h2,
+.rauw-alejandro-info h2, 
+.rauw-alejandro-songs h2,
+.rauw-alejandro-music h2,
+.chappell-roan-info h2, 
+.chappell-roan-songs h2,
+.chappell-roan-music h2
+{
     font-size: 2rem;
     text-align: center;
 }
 
-.sabrina-name-songs{
+.sabrina-name-songs,
+.lady-gaga-songs,
+.rauw-alejandro-songs,
+.chappell-roan-songs
+{
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 1.2rem;
@@ -80,7 +161,18 @@ body{
     text-align: center;
 }
 
-#sabrina-espresso{
-    display: block;
-    margin: auto; 
+iframe{
+    width: 100%; 
+    height: 352px; 
+    border: none;
 }
+
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 14px;
+}
+
