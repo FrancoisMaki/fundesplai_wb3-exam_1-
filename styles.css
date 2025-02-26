@@ -1,0 +1,86 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: grey black;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+.init-page-name{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-bar{
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky; 
+    top: 0;           
+    color: white;
+    padding: 15px;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.nav-bar a:hover{
+    color: rgb(101, 132, 101)
+}
+
+.nav-bar a:active{
+    color: rgb(191, 191, 205)
+}
+
+.sabrina-carpenter-section{
+    color: white;
+}
+
+.sabrina-carpenter-section h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sabrina-carpenter-info p{
+    margin: 4rem;
+    line-height: 2;
+}
+
+#sabrina-carpenter-p1{
+    width: 100%;
+    height: auto;
+}
+
+.sabrina-carpenter-songs{
+    color: white;
+}
+
+.sabrina-carpenter-info h2, 
+.sabrina-carpenter-songs h2,
+.sabrina-carpenter-video h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sabrina-name-songs{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: center;
+}
+
+#sabrina-espresso{
+    display: block;
+    margin: auto; 
+}
